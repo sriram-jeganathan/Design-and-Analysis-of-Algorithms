@@ -1,0 +1,15 @@
+Matrix Dimensions:
+  A1: 10 x 30
+  A2: 30 x 5
+  A3: 5 x 60
+  A4: 60 x 10
+
+Minimum scalar multiplications: 5000
+Optimal parenthesization: ((A1 x A2) x (A3 x A4))
+
+DP Cost Table m[i][j]:
+      A       1A       2A       3A       4
+A1            0     1500     4500     5000
+A2          ---        0     9000     4500
+A3          ---      ---        0     3000
+A4          ---      ---      ---        0
